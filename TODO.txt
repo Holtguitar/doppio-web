@@ -1,0 +1,7 @@
+To Do:
+
+STYLING:
+-transition header and nav on load from top
+-transition content on scroll from bottom
+
+CONTENT:

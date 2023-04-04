@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doppio Web Designs</title>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="overlay"></div>
+    </div>
+    <div class="header__title">
+      <img class="header__doppio-logo" src="./assets/public/doppio-logo.png"/>
+      <h1>Doppio Web Designs</h1>
+    </div>
+    <div class="nav-bar">
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Bio</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="services">
+      <div class="services__header">
+        <p>Services</p>
+        <hr style="width: 25%;"/>
+        <h2>What We Can Build For You</h2>
+      </div>
+      <div class="services__content-container">
+        <div class="services__content">
+          <h3 class="services__content-label">Custom Web Stuffs</h3>
+        </div>
+        <div class="services__nav-container">
+          <input type="radio" value="business-site" class="service-pagination" name="service" id="tab1"/>
+          <input type="radio" value="" class="service-pagination" name="service" id="tab2"/>
+          <input type="radio" value="" class="service-pagination" name="service" id="tab3"/>
+          <input type="radio" value="web-app" class="service-pagination" name="service" id="tab4"/>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="projects__header">
+        <p>Previous Work</p>
+        <hr style="width: 25%;"/>
+        <h2>What We Built For Others</h2>
+      </div>
+      <div class="projects__content-container">
+        <div class="projects__content">
+          <h3 class="projects__content-label">Custom Web Stuffs</h3>
+        </div>
+        <div class="projects__nav-container">
+          <input type="radio" value="business-site" class="service-pagination" name="project" id="tab1"/>
+          <input type="radio" value="" class="service-pagination" name="project" id="tab2"/>
+          <input type="radio" value="" class="service-pagination" name="project" id="tab3"/>
+          <input type="radio" value="web-app" class="service-pagination" name="project" id="tab4"/>
+        </div>
+      </div>
+    </div>
+    <div class="bio">
+        <div class="bio-backdrop">
+          <div class="overlay"></div>
+          <video autoplay muted loop id="myVideo">
+            <source src="/assets/public/Coffe Beans Slowmotion.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="bio__content">
+          <div class="bio__header">
+            <h2>Doppio: What Does It Mean?</h2>
+            <hr style="width: 45%;"/>
+          </div>
+          <div class="doppio__definition">
+            <h3>Doppio:</h3>
+            <p>a double shot of espresso</p>
+            <hr style="width: 25%;"/>
+          </div>
+          <div class="bio__content-1">
+            <p>Our journey is fueled by espresso - in many forms.</p>
+            <p>However, our favorite here is the <u>doppio.</u> This is</p>
+            <p>because it reminds us of how we like our websites.</p>
+            <br/>
+            <h3>Bold & Invigorating!</h3>
+          </div>
+          <div class="bio__content-2">
+            <h3>Who We Are</h3>
+            <hr style="width: 45%;"/>
+            <br/>
+            <p>Based out of Maryville, TN - We are a supporter</p>
+            <p>of the small business structure with a large</p>
+            <p>corporation mentality. We aim to achieve professional</p>
+            <p>expertise and acclaim with a clean, elegant</p>
+            <p>presentation. The value found in our work</p>
+            <p>comes from the expertise and skill with</p>
+            <p>which we build sites for our customers.</p>
+          </div>
+        </div>
+      </div>
+    <div class="contact-us">
+        <div class="form-title">
+          <h2>What can I build for you?</h2>
+          <hr style="width: 45%"/>
+        </div>
+        <div class="form-container">
+            <form action="https://formsubmit.co/7018387d5e1bb7760d83a53915f39d98" method="POST">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_autoresponse" value="Thank you for your inquiry. I will respond as soon as I get your message.">
+              <div class="form-group">
+                <div class="form-row">
+                  <input type="text" name="name" class="form-control__name" placeholder="Full Name" required>
+                  <input type="email" name="email" class="form-control__email" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="form-group__message">
+                <textarea placeholder="Your Message" class="form-control__message" name="message" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="form-control__submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="footer__title">
+        <img class="footer__doppio-logo" src="./assets/public/doppio-logo.png"/>
+        <p>Doppio Web Designs ©</p>
+      </div>
+    </div>
+	  <script src="./assets/index.js"></script>
+  </body>
+</html>

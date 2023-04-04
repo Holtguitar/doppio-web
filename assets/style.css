@@ -1,5 +1,6 @@
 html, body {
     overscroll-behavior-y: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -118,16 +119,19 @@ body {
 
 .services__content {
     position: relative;
-    height: 90%;
-    width: 100%;
-    background-color: #2c3e506a;
+    height: 40%;
+    width: 50%;
+    top: 15%;
+    left: 25%;
     text-align: center;
-    color:#2c3e50
 }
 
-.services__content-label {
+
+.services__image-container {
     position: relative;
-    top: 90%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 
@@ -139,9 +143,95 @@ body {
     top: 3%;
 }
 
-.service-pagination {
+.services-pagination {
     accent-color: #2c3e50be;
 }
+
+#business-website {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#business-caption {
+    position: relative;
+    color: whitesmoke;
+    font-size: 45px;
+    width: 35%;
+    left: 65%;
+    top: -30%;
+}
+
+/* Content Slider */
+.services__slider {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    top: -15%;
+    left: -20%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .services__image-container {
+    width: 3000px;
+    height: 500px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+
+  .services__slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+  }
+
+  .services__slide-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .services__slide-label {
+    position: relative;
+    background-color: #2c3e50be; 
+    width: 50%;
+    left: 25%;
+    color: whitesmoke;
+    top: -15%; 
+    font-size: 25px;
+    border-radius: 5%;
+  }
+
+  #services__slide-1:target ~ .services__image-container {
+    left: 0px;
+  }
+  #services__slide-2:target ~ .services__image-container {
+    left: -1000px;
+  }
+  #services__slide-3:target ~ .services__image-container {
+    left: -2000px;
+  }
+  .services__buttons {
+    position: relative;
+    width: 100%;
+    top: 0%;
+  }
+  .services__buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+    border: 1px solid #2c3e50c6;
+  }
 
 /*                      PREVIOUS PROJECTS            */
 .projects {
@@ -162,38 +252,89 @@ body {
     border-bottom: #ececec 5px solid;
 }
 
-.projects__content-container {
-    position: relative;
-    height: 60%;
-    width: 75%;
-    left: 12.5%;
-    top: 10%;
-}
-
 .projects__content {
     position: relative;
-    height: 90%;
+    height: 86.5%;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.25);
+    /* background-color: rgba(245, 245, 245, 0.25); */
+    /* background-color: red; */
     text-align: center;
 }
 
-.projects__content-label {
-    position: relative;
-    top: 90%;
-}
 
-
-.projects__nav-container {
+/* Content Slider */
+.projects__slider {
     position: relative;
-    list-style: none;
-    color: #e4e4e4be;
+    width: 1000px;
+    height: 600px;
+    left: 15%;
+    top: 15%;
     text-align: center;
-    top: 3%;
-}
+    overflow: hidden;
+  }
+
+  .projects__image-container {
+    width: 3000px;
+    height: 600px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  
+  .projects__slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+  }
+
+  .projects__slide-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .projects__slide-label {
+    position: relative;
+    background-color: #2c3e50be; 
+    width: 50%;
+    left: 25%;
+    color: whitesmoke;
+    top: -15%; 
+    font-size: 25px;
+    border-radius: 5%;
+  }
+
+  #projects__slide-1:target ~ .projects__image-container {
+    left: 0px;
+  }
+  #projects__slide-2:target ~ .projects__image-container {
+    left: -1000px;
+  }
+  #projects__slide-3:target ~ .projects__image-container {
+    left: -2000px;
+  }
+  .projects__buttons {
+    position: relative;
+    width: 100%;
+    top: 18%;
+  }
+  .projects__buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+    border: 1px solid #ffffffc6;
+  }
 
 
-/*                  BIO                              */
+/*                       BIO                              */
 
 .bio {
     height: 100vh;
@@ -205,7 +346,6 @@ body {
     left: 25%;
     top: 10%;
     text-align: center;
-    /* color: #2c3e50; */
     color: whitesmoke
 }
 
@@ -217,7 +357,6 @@ body {
     border-radius: 100%;
     left: 15%;
     margin-top: 5%;
-    transform: rotate(-10deg);
     text-align: center;
     color: whitesmoke;
     box-shadow: 0 8px 8px 0 #2c3e505c;
@@ -282,19 +421,17 @@ body {
     width: 100%;
     height: 103%;
     background: #73777a84;
-    /* background-color: red; */
     opacity: 0.9;
     border-radius: 0% 0% 0% 0%;
 }
 
 #myVideo {
-    /* position: abso; */
     height: 110vh;
     width: 100vw;
     margin-top: -2%;
   }
 
-/*              Contact Form             */
+/*                   Contact Form                  */
 .contact-us {
     height: 60vh;
     background-color: #2c3e50c6;

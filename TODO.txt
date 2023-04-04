@@ -3,5 +3,6 @@ To Do:
 STYLING:
 -transition header and nav on load from top
 -transition content on scroll from bottom
-
+-Initial scroll, top 25% of header stays still while next section scrolls up to it. header sticky once 
+they connect
 CONTENT:

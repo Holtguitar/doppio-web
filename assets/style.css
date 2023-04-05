@@ -242,9 +242,9 @@ body {
     left: -20%;
     text-align: center;
     overflow: hidden;
-  }
+}
 
-  .services__image-container {
+.services__image-container {
     width: 3000px;
     height: 500px;
     clear: both;
@@ -253,23 +253,24 @@ body {
     -moz-transition: left 2s;
     -o-transition: left 2s;
     transition: left 2s;
-  }
+    left: 0;
+}
 
-  .services__slide {
+.services__slide {
     float: left;
     margin: 0px;
     padding: 0px;
     position: relative;
     width: 1000px;
     height: 500px;
-  }
+}
 
-  .services__slide-image {
+.services__slide-image {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .services__slide-label {
+.services__slide-label {
     position: relative;
     background-color: #2c3e50be; 
     width: 50%;
@@ -278,23 +279,14 @@ body {
     top: -15%; 
     font-size: 25px;
     border-radius: 5%;
-  }
+}
 
-  #services__slide-1:target ~ .services__image-container {
-    left: 0px;
-  }
-  #services__slide-2:target ~ .services__image-container {
-    left: -1000px;
-  }
-  #services__slide-3:target ~ .services__image-container {
-    left: -2000px;
-  }
-  .services__buttons {
+.services__buttons {
     position: relative;
     width: 100%;
     top: 0%;
-  }
-  .services__buttons a {
+}
+.services__buttons a {
     display: inline-block;
     height: 15px;
     width: 15px;
@@ -302,11 +294,11 @@ body {
     margin-left: 5.5px;
     margin-right: 5.5px;
     border: 1px solid #2c3e50c6;
-  }
+}
 
-    .serv-active {
-        background-color: #2c3e50c6;
-    }
+.serv-active {
+    background-color: #2c3e50c6;
+}
   
 
 /*                      PREVIOUS PROJECTS            */
@@ -355,6 +347,7 @@ body {
     -moz-transition: left 2s;
     -o-transition: left 2s;
     transition: left 2s;
+    left: 0;
   }
   
   .projects__slide {
@@ -382,15 +375,6 @@ body {
     border-radius: 5%;
   }
 
-  #projects__slide-1:target ~ .projects__image-container {
-    left: 0px;
-  }
-  #projects__slide-2:target ~ .projects__image-container {
-    left: -1000px;
-  }
-  #projects__slide-3:target ~ .projects__image-container {
-    left: -2000px;
-  }
   .projects__buttons {
     position: relative;
     width: 100%;

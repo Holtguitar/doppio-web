@@ -30,11 +30,13 @@ const navLinks = [navHome, navServices, navProjects, navBio, navContact];
 const projNav1 = document.getElementById("projects-nav-1");
 const projNav2 = document.getElementById("projects-nav-2");
 const projNav3 = document.getElementById("projects-nav-3");
-const serviceNav1 = document.getElementById("services-nav-1");
-const serviceNav2 = document.getElementById("services-nav-2");
-const serviceNav3 = document.getElementById("services-nav-3");
+const projImgContainer = document.getElementById("projects__image-container")
+const servNav1 = document.getElementById("services-nav-1");
+const servNav2 = document.getElementById("services-nav-2");
+const servNav3 = document.getElementById("services-nav-3");
+const servImgContainer = document.getElementById("services__image-container")
 const projNavs = [projNav1, projNav2, projNav3];
-const servNavs = [serviceNav1, serviceNav2, serviceNav3];
+const servNavs = [servNav1, servNav2, servNav3];
 
 
 //                  Content Pagination
@@ -42,17 +44,39 @@ const toggleActive = (e, arr, property) => {
     arr.forEach(i => {
         i.classList.remove(`${property}`)
     });
+
     e.classList.add(`${property}`);
 };
 
 servNavs.forEach(e => {
-    e.addEventListener("click", function(){toggleActive(e, servNavs, 'serv-active')})
+    e.addEventListener("click", function(){toggleActive(e, servNavs, 'serv-active')});
 });
 
 projNavs.forEach(e => {
     e.addEventListener("click", function(){toggleActive(e, projNavs, 'proj-active')})
 });
 
+projNav1.addEventListener("click", function(){
+    projImgContainer.style.left = "0px"
+})
+
+projNav2.addEventListener("click", function(){
+    projImgContainer.style.left = "-1000px"
+})
+
+projNav3.addEventListener("click", function(){
+    projImgContainer.style.left = "-2000px"
+})
+
+servNav1.addEventListener("click", function(){
+    servImgContainer.style.left = "0px"
+})
+servNav2.addEventListener("click", function(){
+    servImgContainer.style.left = "-1000px"
+})
+servNav3.addEventListener("click", function(){
+    servImgContainer.style.left = "-2000px"
+})
 
 
 //              Nav Smooth Scroll - Account for sticky header
@@ -152,8 +176,6 @@ const stickyHeader = () => {
         header.classList.add("bio__fixed-top");
         toggleActiveLink(navBio);
     }
-
-    console.log(headerHeight)
 }
 
 window.addEventListener("scroll", function(){

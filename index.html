@@ -8,44 +8,46 @@
     <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="home">
       <div class="overlay"></div>
     </div>
-    <div class="header__title">
-      <img class="header__doppio-logo" src="./assets/public/doppio-logo.png"/>
-      <h1>Doppio Web Designs</h1>
+    <div class="header-section not-in-view" id="header-section">
+      <div class="header__title">
+        <img class="header__doppio-logo" src="./assets/public/doppio-logo.png" alt="Coffee Logo"/>
+        <h1>Doppio Web Designs</h1>
+      </div>
+      <div class="nav-bar">
+        <ul>
+          <li><a id="nav-home">Home</a></li>
+          <li><a id="nav-services">Services</a></li>
+          <li><a id="nav-projects">Projects</a></li>
+          <li><a id="nav-bio">Bio</a></li>
+          <li><a id="nav-contact">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="nav-bar">
-      <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Bio</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-    <div class="services">
-      <div class="services__header">
+    <div class="services" id="services">
+      <div class="services__header not-in-view" id="services__header">
         <p>Services</p>
         <hr style="width: 25%;"/>
         <h2>What We Can Build For You</h2>
       </div>
-      <div class="services__content">
+      <div class="services__content not-in-view" id="services__content">
         <div class="services__slider">
           <span id="services__slide-1"></span>
           <span id="services__slide-2"></span>
           <span id="services__slide-3"></span>
           <div class="services__image-container">
             <figure class="services__slide">
-              <img src="/assets/public/business-website.jpeg" class="services__slide-image"/>
+              <img src="/assets/public/business-website.jpeg" class="services__slide-image" alt="website image"/>
               <figcaption class="services__slide-label">Business</figcaption>
             </figure>
             <figure class="services__slide">
-              <img src="/assets/public/personal-website.png" class="services__slide-image"/>
+              <img src="/assets/public/personal-website.png" class="services__slide-image" alt="website image"/>
               <figcaption class="services__slide-label">Informational</figcaption>
             </figure>
             <figure class="services__slide">
-              <img src="/assets/public/web-application.jpeg" class="services__slide-image"/>
+              <img src="/assets/public/web-application.jpeg" class="services__slide-image" alt="website image"/>
               <figcaption class="services__slide-label">Custom Web Apps</figcaption>
             </figure>
           </div>
@@ -58,28 +60,28 @@
       </div>
       </div>
     </div>
-    <div class="projects">
-      <div class="projects__header">
+    <div class="projects" id="projects">
+      <div class="projects__header not-in-view" id="projects__header">
         <p>Previous Work</p>
         <hr style="width: 25%;"/>
         <h2>What We Built For Others</h2>
       </div>
-      <div class="projects__content">
+      <div class="projects__content not-in-view" id="projects__content">
         <div class="projects__slider">
           <span id="projects__slide-1"></span>
           <span id="projects__slide-2"></span>
           <span id="projects__slide-3"></span>
           <div class="projects__image-container">
             <figure class="projects__slide">
-              <img src="/assets/public/aa-homeimprovement.png" class="projects__slide-image"/>
+              <img src="/assets/public/aa-homeimprovement.png" class="projects__slide-image" alt="website image"/>
               <figcaption class="projects__slide-label">AA Home Improvement</figcaption>
             </figure>
             <figure class="projects__slide">
-              <img src="/assets/public/recollect.png" class="projects__slide-image"/>
+              <img src="/assets/public/recollect.png" class="projects__slide-image" alt="website image"/>
               <figcaption class="projects__slide-label">Recollect</figcaption>
             </figure>
             <figure class="projects__slide">
-              <img src="/assets/public/photo-album.png" class="projects__slide-image"/>
+              <img src="/assets/public/photo-album.png" class="projects__slide-image" alt="website image"/>
               <figcaption class="projects__slide-label">Custom Family Album</figcaption>
             </figure>
           </div>
@@ -91,24 +93,24 @@
         </div>
       </div>
     </div>
-    <div class="bio">
+    <div class="bio" id="bio">
         <div class="bio-backdrop">
           <div class="overlay"></div>
           <video autoplay muted loop id="myVideo">
             <source src="/assets/public/Coffe Beans Slowmotion.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="bio__content">
-          <div class="bio__header">
+        <div class="bio__content not-in-view" id="bio__content">
+          <div class="bio__header" id="bio__header">
             <h2>Doppio: What Does It Mean?</h2>
             <hr style="width: 45%;"/>
           </div>
-          <div class="doppio__definition">
+          <div class="doppio__definition" id="doppio__definition">
             <h3>Doppio:</h3>
             <p>a double shot of espresso</p>
             <hr style="width: 25%;"/>
           </div>
-          <div class="bio__content-1">
+          <div class="bio__content-1" id="bio__content-1">
             <p>Our journey is fueled by espresso - in many forms.</p>
             <p>However, our favorite here is the <u>doppio.</u> This is</p>
             <p>because it reminds us of how we like our websites.</p>
@@ -116,7 +118,7 @@
             <h3>Bold & Invigorating!</h3>
             <hr style="width: 25%"/>
           </div>
-          <div class="bio__content-2">
+          <div class="bio__content-2" id="bio__content-2">
             <h3>Who We Are</h3>
             <hr style="width: 45%;"/>
             <br/>
@@ -130,12 +132,12 @@
           </div>
         </div>
       </div>
-    <div class="contact-us">
-        <div class="form-title">
+    <div class="contact-us" >
+        <div class="form-title not-in-view" id="contact__title">
           <h2>What can I build for you?</h2>
           <hr style="width: 45%"/>
         </div>
-        <div class="form-container">
+        <div class="form-container not-in-view" id="contact__form">
             <form action="https://formsubmit.co/7018387d5e1bb7760d83a53915f39d98" method="POST">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_autoresponse" value="Thank you for your inquiry. I will respond as soon as I get your message.">
@@ -153,9 +155,9 @@
           </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="footer__title">
-        <img class="footer__doppio-logo" src="./assets/public/doppio-logo.png"/>
+        <!-- <img class="footer__doppio-logo" src="./assets/public/doppio-logo.png"/> -->
         <p>Doppio Web Designs ©</p>
       </div>
     </div>

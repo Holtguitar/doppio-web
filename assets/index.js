@@ -8,22 +8,7 @@ const projectsContent = document.querySelector("#projects__content");
 const bioContent = document.querySelector("#bio__content");
 const contactTitle = document.querySelector("#contact__title");
 const contactForm = document.querySelector("#contact__form");
-const mobileTitle = document.querySelector("#mobile-title")
-
-const fadeIn = (element) => {
-    element.classList.add("fade-in-view")
-    element.classList.add("in-view")
-}
-
-if(window.innerWidth <= 640){
-    fadeIn(mobileTitle)
-    console.log(window.innerWidth)
-} else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
-    console.log(window.innerWidth)
-} else {
-    console.log(window.innerWidth)
-}
-
+const mobileTitle = document.querySelector("#mobile-title");
 
 //Nav Links IDs
 const navHome = document.querySelector("#nav-home");
@@ -31,12 +16,13 @@ const navServices = document.querySelector("#nav-services");
 const navProjects = document.querySelector("#nav-projects");
 const navBio = document.querySelector("#nav-bio");
 const navContact = document.querySelector("#nav-contact");
-const home = 0
-const services = 687;
-const projects = 1632
-const bio = 2578;
-const contact = 3389;
+let home;
+let services;
+let projects;
+let bio;
+let contact;
 const navLinks = [navHome, navServices, navProjects, navBio, navContact];
+
 
 //Content pagination links IDs
 const projNav1 = document.getElementById("projects-nav-1");
@@ -49,6 +35,38 @@ const servNav3 = document.getElementById("services-nav-3");
 const servImgContainer = document.getElementById("services__image-container")
 const projNavs = [projNav1, projNav2, projNav3];
 const servNavs = [servNav1, servNav2, servNav3];
+
+const fadeIn = (element) => {
+    element.classList.add("fade-in-view")
+    element.classList.add("in-view")
+}
+
+if(window.innerWidth <= 640){
+    // Mobile Phone
+    home = 0;
+    services = 768;
+    projects = 1790;
+    bio = 2807;
+    contact = 3685;
+
+    fadeIn(mobileTitle);
+} else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
+    // Tablet
+    home = 0;
+    services = 687;
+    projects = 1632
+    bio = 2578;
+    contact = 3389;
+
+    fadeIn(mobileTitle);
+} else {
+    // PC/Laptop
+    home = 0;
+    services = 687;
+    projects = 1632;
+    bio = 2578;
+    contact = 3389;
+}
 
 
 //                  Content Pagination
@@ -69,26 +87,32 @@ projNavs.forEach(e => {
 });
 
 projNav1.addEventListener("click", function(){
-    projImgContainer.style.left = "0px"
-})
+    projImgContainer.style.left = "0px";
+});
 
 projNav2.addEventListener("click", function(){
-    projImgContainer.style.left = "-1000px"
-})
+    // projImgContainer.style.left = "-1000px"
+    projImgContainer.style.left = "-70vw";
+});
 
 projNav3.addEventListener("click", function(){
-    projImgContainer.style.left = "-2000px"
-})
+    // projImgContainer.style.left = "-2000px"
+    projImgContainer.style.left = "-140vw";
+});
 
 servNav1.addEventListener("click", function(){
-    servImgContainer.style.left = "0px"
-})
+    servImgContainer.style.left = "0px";
+});
+
 servNav2.addEventListener("click", function(){
-    servImgContainer.style.left = "-1000px"
-})
+    // servImgContainer.style.left = "-1000px"
+    servImgContainer.style.left = "-70vw";
+});
+
 servNav3.addEventListener("click", function(){
-    servImgContainer.style.left = "-2000px"
-})
+    // servImgContainer.style.left = "-2000px"
+    servImgContainer.style.left = "-140vw";
+});
 
 
 //              Nav Smooth Scroll - Account for sticky header
@@ -188,8 +212,6 @@ const stickyHeader = () => {
         header.classList.add("bio__fixed-top");
         toggleActiveLink(navBio);
     }
-
-    console.log(headerHeight)
 }
 
 window.addEventListener("scroll", function(){

@@ -191,8 +191,10 @@ body {
 
 .services__content-container {
     position: relative;
-    height: 60%;
-    width: 75%;
+    /* height: 60%;
+    width: 75%; */
+    height: 70vh;
+    width: 70vw;
     left: 12.5%;
     top: 10%;
 }
@@ -245,17 +247,22 @@ body {
 /* Content Slider */
 .services__slider {
     position: relative;
-    width: 1000px;
-    height: 500px;
+    /* width: 1000px;
+    height: 500px; */
+    width: 70vw;
+    height: 70vh;
     top: -15%;
     left: -20%;
     text-align: center;
     overflow: hidden;
+    margin: 0;
 }
 
 .services__image-container {
-    width: 3000px;
-    height: 500px;
+    /* width: 3000px;
+    height: 500px; */
+    width: 2100vw;
+    height: 70vh;
     clear: both;
     position: relative;
     -webkit-transition: left 2s;
@@ -270,8 +277,10 @@ body {
     margin: 0px;
     padding: 0px;
     position: relative;
-    width: 1000px;
-    height: 500px;
+    /* width: 1000px;
+    height: 500px; */
+    width: 70vw;
+    height: 70vh;
 }
 
 .services__slide-image {
@@ -281,9 +290,9 @@ body {
 
 .services__slide-label {
     position: relative;
-    background-color: #2c3e50be; 
-    width: 50%;
-    left: 25%;
+    background-color: #2c3e50dc; 
+    width: 25%;
+    left: 37.5%;
     color: whitesmoke;
     top: -15%; 
     font-size: 25px;
@@ -332,6 +341,9 @@ body {
     position: relative;
     height: 86.5%;
     width: 100%;
+    /* height: 40%;
+    width: 50%; */
+    /* left: 12.5%; */
     text-align: center;
 }
 
@@ -339,8 +351,10 @@ body {
 /* Content Slider */
 .projects__slider {
     position: relative;
-    width: 1000px;
-    height: 600px;
+    /* width: 1000px;
+    height: 600px; */
+    width: 70vw;
+    height: 70vh;
     left: 15%;
     top: 15%;
     text-align: center;
@@ -348,8 +362,10 @@ body {
   }
 
   .projects__image-container {
-    width: 3000px;
-    height: 600px;
+    /* width: 3000px;
+    height: 600px; */
+    width: 2100vw;
+    height: 70vh;
     clear: both;
     position: relative;
     -webkit-transition: left 2s;
@@ -364,8 +380,10 @@ body {
     margin: 0px;
     padding: 0px;
     position: relative;
-    width: 1000px;
-    height: 600px;
+    /* width: 1000px;
+    height: 600px; */
+    width: 70vw;
+    height: 70vh;
   }
 
   .projects__slide-image {
@@ -375,9 +393,9 @@ body {
 
   .projects__slide-label {
     position: relative;
-    background-color: #2c3e50be; 
-    width: 50%;
-    left: 25%;
+    background-color: #2c3e50dc; 
+    width: 25%;
+    left: 37.5%;
     color: whitesmoke;
     top: -15%; 
     font-size: 25px;
@@ -601,7 +619,6 @@ body {
 
 .footer__title p {
     position: relative;
-    /* left: 25%; */
     top: 25%;
 }
 
@@ -625,6 +642,7 @@ body {
         position: relative;
         width: 100vw;
         height: 15vh;
+        
     }
     .mobile-header__doppio-logo {
         height: 55px;
@@ -648,7 +666,6 @@ body {
         left: 0%;
         width: 100vw;
         height: 10vh;
-        /* background-color: red; */
     }
 
     .nav-bar ul {
@@ -658,9 +675,6 @@ body {
         top: -20%;
         height: 100%;
         width:80vw;
-        /* background-color: green; */
-        opacity: .5;
-
     }
 
 
@@ -673,11 +687,9 @@ body {
         margin-right: 15%;
         top: 0%;
         padding-top: 5%;
-        /* background-color: rgb(72, 0, 255); */
     }
 
     .header__title {
-        /* position: absolute; */
         color: white;
         display: flex;
         flex-direction: row;
@@ -696,29 +708,164 @@ body {
         display: none;
     }
 
-    /* Projects */
-    .projects__slider {
-        position: relative;
-        width: 350px;
-        height: 250px;
-        left: 5%;
-        top: 15%;
-        text-align: center;
-        overflow: hidden;
-    }
-
     /* Services */
-    .services__slider {
+    .services__header {
         position: relative;
-        width: 200px;
-        height: 200px;
-        top: -15%;
-        left: -20%;
-        text-align: center;
-        overflow: hidden;
+        width: 75vw;
+        left: 12.5%;
+        font-size: smaller;
+    }
+    
+    .services__slider,
+    .services__slide, 
+    .services__image-container, 
+    .services__slide-image {
+        height: 25vh;
+    }
+    
+    .services__slide-label {
+        top: -20%;
+        font-size: 15px;
     }
 
+    /* Projects */
+    .projects__header {
+        position: relative;
+        width: 75vw;
+        left: 12.5%;
+        font-size: smaller;
+    }
+    
+    .projects__slider,
+    .projects__slide, 
+    .projects__image-container, 
+    .projects__slide-image {
+        height: 25vh;
+    }
+    
+    .projects__slide-label {
+        top: -30%;
+        font-size: 15px;
+    }
+
+    /* BIO */
+    .bio-backdrop {
+        display: none;
+    }
+
+    .bio__header {
+        display: none;
+    }
+
+    .bio__content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+    }
+
+    .doppio__definition {
+        width: 40vw;
+        height: 20vh;
+        left: 30vw;
+        top: 47.5%;
+        font-size: smaller;
+    }
+
+    .doppio__definition h3,
+    .doppio__definition p,
+    .doppio__definition hr {
+        top: 25%;
+    }
+
+    .bio__content-1, .bio__content-2 {
+        width: 90vw;
+        left: 5vw;
+        top: 0%;
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .bio__content-1 {
+        top: 50%;
+        height: 25vh;
+    }
+
+    .bio__content-2 {
+        border-radius: 5%;
+        top: -47.5%;
+        height: 40vh;
+    }
+
+    /* Contact */
+    .contact-us {
+        height: 80vh;
+        background-color: #2c3e50;
+        border-radius: 0% 0% 0% 0%;
+    }
+    
+    .form-title {
+        width: 90vw;
+        left: 5vw;
+        font-size: smaller;
+    }
+
+    .form-title hr {
+        /* display: none; */
+    }
+    
+    .form-container {
+        width: 75vw;
+        height: 40vh;
+        left: 9%;
+    }
+    
+    .form-row {
+        height: 50px;
+        width: 90%;
+        left: 12.5%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-control__name, .form-control__email {
+        position: relative;
+        width: 80%;
+        height: 50%;
+        padding-left: 10px;
+        margin-bottom: 5%;
+    }
+    
+    .form-group__message {
+        width: 80%;
+        left: 10%;
+        margin-top: 5%;
+    }
+
+    /* Footer */
+    .footer {
+        height: 15vh;
+        color: white
+    }
+    
+    .footer__title {
+        position: relative;
+        width: 55%;
+        height: 100%;
+        color: #2c3e50;
+        display: flex;
+        left: 5%;
+        /* background-color: red; */
+    }
+   
+    .footer__title p {
+        position: relative;
+        font-size: 20px;
+        top: 25%;
+    }
 }
+
 
 
 

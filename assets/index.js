@@ -86,33 +86,78 @@ projNavs.forEach(e => {
     e.addEventListener("click", function(){toggleActive(e, projNavs, 'proj-active')})
 });
 
-projNav1.addEventListener("click", function(){
-    projImgContainer.style.left = "0px";
-});
+if(window.innerWidth <= 640){
+    // Mobile Phone
+    projNav1.addEventListener("click", function(){
+        projImgContainer.style.left = "0px";
+    });
+    
+    projNav2.addEventListener("click", function(){
+        // projImgContainer.style.left = "-1000px"
+        projImgContainer.style.left = "-70vw";
+    });
+    
+    projNav3.addEventListener("click", function(){
+        // projImgContainer.style.left = "-2000px"
+        projImgContainer.style.left = "-140vw";
+    });
+    
+    servNav1.addEventListener("click", function(){
+        servImgContainer.style.left = "0px";
+    });
+    
+    servNav2.addEventListener("click", function(){
+        // servImgContainer.style.left = "-1000px"
+        servImgContainer.style.left = "-70vw";
+    });
+    
+    servNav3.addEventListener("click", function(){
+        // servImgContainer.style.left = "-2000px"
+        servImgContainer.style.left = "-140vw";
+    });
 
-projNav2.addEventListener("click", function(){
-    // projImgContainer.style.left = "-1000px"
-    projImgContainer.style.left = "-70vw";
-});
+    fadeIn(mobileTitle);
+} else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
+    // Tablet
+    home = 0;
+    services = 687;
+    projects = 1632
+    bio = 2578;
+    contact = 3389;
 
-projNav3.addEventListener("click", function(){
-    // projImgContainer.style.left = "-2000px"
-    projImgContainer.style.left = "-140vw";
-});
+    fadeIn(mobileTitle);
+} else {
+    // PC/Laptop
+    projNav1.addEventListener("click", function(){
+        projImgContainer.style.left = "0px";
+    });
+    
+    projNav2.addEventListener("click", function(){
+        // projImgContainer.style.left = "-1000px"
+        projImgContainer.style.left = "-70vw";
+    });
+    
+    projNav3.addEventListener("click", function(){
+        // projImgContainer.style.left = "-2000px"
+        projImgContainer.style.left = "-140vw";
+    });
+    
+    servNav1.addEventListener("click", function(){
+        servImgContainer.style.left = "0px";
+    });
+    
+    servNav2.addEventListener("click", function(){
+        // servImgContainer.style.left = "-1000px"
+        servImgContainer.style.left = "-70vw";
+    });
+    
+    servNav3.addEventListener("click", function(){
+        // servImgContainer.style.left = "-2000px"
+        servImgContainer.style.left = "-140vw";
+    });
+}
 
-servNav1.addEventListener("click", function(){
-    servImgContainer.style.left = "0px";
-});
 
-servNav2.addEventListener("click", function(){
-    // servImgContainer.style.left = "-1000px"
-    servImgContainer.style.left = "-70vw";
-});
-
-servNav3.addEventListener("click", function(){
-    // servImgContainer.style.left = "-2000px"
-    servImgContainer.style.left = "-140vw";
-});
 
 
 //              Nav Smooth Scroll - Account for sticky header

@@ -45,16 +45,16 @@ if(window.innerWidth <= 640){
     // Mobile Phone
     home = 0;
     services = 768;
-    projects = 1790;
-    bio = 2807;
-    contact = 3685;
+    projects = 1873;
+    bio = 2980;
+    contact = 3868;
 
     fadeIn(mobileTitle);
 } else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
     // Tablet
     home = 0;
     services = 687;
-    projects = 1632
+    projects = 1632;
     bio = 2578;
     contact = 3389;
 
@@ -62,7 +62,7 @@ if(window.innerWidth <= 640){
 } else {
     // PC/Laptop
     home = 0;
-    services = 687;
+    services = 767;
     projects = 1632;
     bio = 2578;
     contact = 3389;
@@ -119,11 +119,7 @@ if(window.innerWidth <= 640){
     fadeIn(mobileTitle);
 } else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
     // Tablet
-    home = 0;
-    services = 687;
-    projects = 1632
-    bio = 2578;
-    contact = 3389;
+   
 
     fadeIn(mobileTitle);
 } else {
@@ -257,6 +253,8 @@ const stickyHeader = () => {
         header.classList.add("bio__fixed-top");
         toggleActiveLink(navBio);
     }
+
+    console.log(headerHeight)
 }
 
 window.addEventListener("scroll", function(){

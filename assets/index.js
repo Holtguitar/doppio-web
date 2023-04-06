@@ -8,11 +8,23 @@ const projectsContent = document.querySelector("#projects__content");
 const bioContent = document.querySelector("#bio__content");
 const contactTitle = document.querySelector("#contact__title");
 const contactForm = document.querySelector("#contact__form");
+const mobileTitle = document.querySelector("#mobile-title")
 
 const fadeIn = (element) => {
     element.classList.add("fade-in-view")
     element.classList.add("in-view")
 }
+
+if(window.innerWidth <= 640){
+    fadeIn(mobileTitle)
+    console.log(window.innerWidth)
+} else if(window.innerWidth > 640 && window.innerWidth <= 1007 ) {
+    console.log(window.innerWidth)
+} else {
+    console.log(window.innerWidth)
+}
+
+
 //Nav Links IDs
 const navHome = document.querySelector("#nav-home");
 const navServices = document.querySelector("#nav-services");
@@ -176,6 +188,8 @@ const stickyHeader = () => {
         header.classList.add("bio__fixed-top");
         toggleActiveLink(navBio);
     }
+
+    console.log(headerHeight)
 }
 
 window.addEventListener("scroll", function(){

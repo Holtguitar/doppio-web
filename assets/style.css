@@ -766,6 +766,7 @@ body {
         width: 75vw;
         left: 12.5%;
         font-size: smaller;
+        top: 2.5%;
     }
     
     .projects__slider, .projects__buttons {
@@ -778,7 +779,7 @@ body {
         flex-direction: column;
         width: 100vw;
         height: 95vh;
-        top: 10%;
+        top: 7.5%;
     }
 
     .mobile-projects__image-box{

@@ -428,6 +428,10 @@ body {
     border: 1px solid #ffffffc6;
   }
 
+  .projects__buttons:hover {
+    cursor: pointer;
+  }
+
   .proj-active {
     background-color: #ffffffc6;
   }
